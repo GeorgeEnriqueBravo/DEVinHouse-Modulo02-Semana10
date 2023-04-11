@@ -1,0 +1,7 @@
+JSON Web Token tem como objetivo transmitir ou armazenar de forma compacta e segura objetos JSON entre diferentes aplicações.
+
+Ele consiste em três partes separadas por pontos (.), Que são:
+
+Header
+Payload
+Signature

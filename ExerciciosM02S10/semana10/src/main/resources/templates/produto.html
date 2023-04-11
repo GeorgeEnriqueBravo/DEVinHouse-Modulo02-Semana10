@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Produto</title>
+</head>
+<body>
+
+<!--    <div th:text="'Nome do produto: ' + ${nome}"></div>-->
+<!--    <div th:text="${descricao}"></div>-->
+<!--    <div th:text="${dataLancamento}"></div>-->
+<!--    <div th:text="${valor}"></div>-->
+
+<!--    <div th:object="produto">-->
+<!--        <div th:text="${produto.nome}"></div>-->
+<!--        <div th:text="${produto.descricao}"></div>-->
+<!--    </div>-->
+
+<form action="#"
+      th:action="@{/produto}"
+      th:object="${produtoDto}"
+      method="post"
+>
+    <label for="nome" >Nome do Produto</label>
+    <input type="text" th:field="*{nome}"  id="nome" placeholder="Nome">
+    <br>
+    <label for="descricao" >Descrição do Produto</label>
+    <input type="text" th:field="*{descricao}"  id="descricao" placeholder="Descricao">
+    <br>
+    <label for="dataLancamento" >Data de Lançamento</label>
+    <input type="text" th:field="*{dataLancamento}"  id="dataLancamento" placeholder="Data">
+    <br>
+    <label for="valor" >Valor</label>
+    <input type="text" th:field="*{valor}"  id="valor" placeholder="Valor">
+    <br>
+    <input type="submit" value="Add Produto">
+
+</form>
+
+</body>
+</html>
+

@@ -41,6 +41,8 @@ public class ProdutoService {
         produtoEscolhido.setDescricao(produto.getDescricao());
         produtoEscolhido.setValor(produto.getValor());
 
+        repository.save(produtoEscolhido);
+
         return true;
     }
 }

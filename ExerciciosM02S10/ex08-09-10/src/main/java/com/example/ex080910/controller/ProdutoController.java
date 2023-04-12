@@ -29,7 +29,7 @@ public class ProdutoController {
     public boolean criarProduto(@RequestBody @Validated Produto produto) {
         return service.salvarProduto(produto);
     }
-    @DeleteMapping("/deletar")
+    @DeleteMapping("/deletar/{id}")
     public boolean apagarProduto(@PathVariable Long id) {
         return service.deletarProdutoPorId(id);
     }
